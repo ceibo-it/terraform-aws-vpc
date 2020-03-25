@@ -70,6 +70,7 @@ module "private_subnets" {
 | enable_dns_hostnames | A boolean flag to enable/disable DNS hostnames in the VPC | bool | `true` | no |
 | enable_dns_support | A boolean flag to enable/disable DNS support in the VPC | bool | `true` | no |
 | instance_tenancy | A tenancy option for instances launched into the VPC | string | `default` | no |
+| internet_gateway_enabled | A boolean flag to enable/disable the creation of an internet gateway | bool | `true` | no |
 | name | Name  (e.g. `app` or `cluster`) | string | - | yes |
 | namespace | Namespace (e.g. `cp` or `cloudposse`) | string | `` | no |
 | stage | Stage (e.g. `prod`, `dev`, `staging`) | string | `` | no |

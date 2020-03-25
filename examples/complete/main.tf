@@ -17,7 +17,7 @@ module "public_subnets" {
   name                = var.name
   availability_zones  = ["us-east-2a", "us-east-2b", "us-east-2c"]
   vpc_id              = module.vpc.vpc_id
-  cidr_blocks          = ["10.0.0.0/24", "10.0.1.0/24", "10.0.2.0/24"]
+  cidr_blocks         = ["10.0.0.0/24", "10.0.1.0/24", "10.0.2.0/24"]
   type                = "public"
   igw_id              = module.vpc.igw_id
   nat_gateway_enabled = "true"
@@ -30,7 +30,7 @@ module "private_subnets" {
   name               = var.name
   availability_zones = ["us-east-2a", "us-east-2b", "us-east-2c"]
   vpc_id             = module.vpc.vpc_id
-  cidr_blocks         = ["10.0.10.0/24", "10.0.11.0/24", "10.0.12.0/24"]
+  cidr_blocks        = ["10.0.10.0/24", "10.0.11.0/24", "10.0.12.0/24"]
   type               = "private"
 
   az_ngw_ids = module.public_subnets.az_ngw_ids
