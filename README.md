@@ -67,10 +67,10 @@ module "private_subnets" {
 | enable_classiclink | A boolean flag to enable/disable ClassicLink for the VPC | bool | `false` | no |
 | enable_classiclink_dns_support | A boolean flag to enable/disable ClassicLink DNS Support for the VPC | bool | `false` | no |
 | enable_default_security_group_with_custom_rules | A boolean flag to enable/disable custom and restricive inbound/outbound rules for the default VPC's SG | bool | `true` | no |
-| enable_internet_gateway | A boolean flag to enable/disable the creation of an internet gateway | bool | `true` | no |
 | enable_dns_hostnames | A boolean flag to enable/disable DNS hostnames in the VPC | bool | `true` | no |
 | enable_dns_support | A boolean flag to enable/disable DNS support in the VPC | bool | `true` | no |
 | instance_tenancy | A tenancy option for instances launched into the VPC | string | `default` | no |
+| internet_gateway_enabled | A boolean flag to enable/disable the creation of an internet gateway | bool | `true` | no |
 | name | Name  (e.g. `app` or `cluster`) | string | - | yes |
 | namespace | Namespace (e.g. `cp` or `cloudposse`) | string | `` | no |
 | stage | Stage (e.g. `prod`, `dev`, `staging`) | string | `` | no |
